@@ -1,48 +1,95 @@
-## Minimal UI ([Free version](https://free.minimals.cc/))
+Here's an updated README with some emojis added:
 
-![license](https://img.shields.io/badge/license-MIT-blue.svg)
+---
 
-![preview](public/assets/images/minimal-free-preview.jpg)
+# DMS Client - Vellow Motors 🚗⚡
 
-> Free React Admin Dashboard made with Material-UI components and React + Vite.js.
+`dms-client` is the client-side application for Vellow Motors' Dealership Management System (DMS). This application allows dealers to manage customers, create new customer entries, and process e-vehicle sales seamlessly. Built with React and Material UI, the DMS Client provides an intuitive interface to streamline dealership operations and improve customer service.
 
-## Pages
+## Table of Contents 📑
 
-- [Dashboard](https://free.minimals.cc/)
-- [Users](https://free.minimals.cc/user)
-- [Products](https://free.minimals.cc/products)
-- [Blog](https://free.minimals.cc/blog)
-- [Sign in](https://free.minimals.cc/sign-in)
-- [Not found](https://free.minimals.cc/404)
+- [Features](#features-✨)
+- [Tech Stack](#tech-stack-🛠️)
+- [Installation](#installation-📥)
+- [Configuration](#configuration-🔧)
+- [Usage](#usage-🚀)
+- [Deployment](#deployment-🌍)
+- [Contributing](#contributing-🤝)
+- [License](#license-📄)
 
-## Quick start
+## Features ✨
 
-- Clone the repo: `git clone https://github.com/minimal-ui-kit/material-kit-react.git`
-- Recommended: `Node.js v20.x`
-- **Install:** `npm i` or `yarn install`
-- **Start:** `npm run dev` or `yarn dev`
-- **Build:** `npm run build` or `yarn build`
-- Open browser: `http://localhost:3039`
+- **Customer Management**: Add, edit, and view customer information.
+- **Sales Processing**: Record and manage the sale of e-vehicles.
+- **User-Friendly Interface**: Built with Material UI for a modern, responsive design.
+- **Vercel Deployment**: Quick and reliable deployment on Vercel.
 
-## Upgrade to PRO Version
+## Tech Stack 🛠️
 
-| Minimal Free                | [Minimal Pro](https://material-ui.com/store/items/minimal-dashboard/)                                   |
-| :-------------------------- | :------------------------------------------------------------------------------------------------------ |
-| **6** Pages                 | **70+** Pages                                                                                           |
-| **Partial** theme customize | **Fully** theme customize                                                                               |
-| -                           | **Next.js** version                                                                                     |
-| -                           | **TypeScript** version (Standard Plus and Extended license)                                             |
-| -                           | Design **Figma** file (Standard Plus and Extended license)                                              |
-| -                           | Authentication with **Amplify**, **Auth0**, **JWT**, **Firebase** and **Supabase**                      |
-| -                           | Light/dark mode, right-to-left, form validation... ([+more components](https://minimals.cc/components)) |
-| -                           | Complete users flows                                                                                    |
-| -                           | 1 year of free updates / 6 months of technical support                                                  |
-| -                           | Learn more: [Package & license](https://docs.minimals.cc/package)                                       |
+- **Frontend**: [React](https://reactjs.org/) with [Material UI](https://mui.com/)
+- **Backend**: API integration with Vellow Motors' DMS API
+- **Deployment**: [Vercel](https://vercel.com/)
 
-## License
+## Installation 📥
 
-Distributed under the [MIT](https://github.com/minimal-ui-kit/minimal.free/blob/main/LICENSE.md) license.
+To get started with `dms-client`, follow these steps:
 
-## Contact us
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/dms-client.git
+   cd dms-client
+   ```
 
-Email: support@minimals.cc
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Start the Application**:
+   ```bash
+   npm start
+   ```
+
+The application will be available at `http://localhost:3000`.
+
+## Configuration 🔧
+
+Ensure that you have a `.env` file with the necessary environment variables, such as the API endpoint for connecting to the backend.
+
+Example `.env` file:
+```env
+REACT_APP_API_BASE_URL=https://api.vellowmotors.com
+REACT_APP_API_KEY=your_api_key_here
+```
+
+## Usage 🚀
+
+- **Creating a New Customer**: Go to the "Customers" section and click on "Add Customer." Fill in the required details and save.
+- **Recording a Sale**: Navigate to the "Sales" section, select a customer, choose the vehicle, and finalize the sale.
+- **Managing Records**: View customer and sales records, update information, and manage dealership operations with ease.
+
+## Deployment 🌍
+
+This project is automatically deployed on Vercel. For development, you can deploy changes to Vercel by connecting this repository to your Vercel account and pushing to the main branch.
+
+To manually deploy, follow these steps:
+
+1. Commit and push changes to the repository.
+2. Vercel will automatically trigger a new deployment.
+
+## Contributing 🤝
+
+We welcome contributions to improve this application. To contribute:
+
+1. Fork the repository.
+2. Create a new branch with your feature or bug fix.
+3. Make your changes and commit them.
+4. Open a pull request with a description of your changes.
+
+## License 📄
+
+This project is licensed under the MIT License.
+
+--- 
+
+Enjoy using the DMS Client! 🚗💼
