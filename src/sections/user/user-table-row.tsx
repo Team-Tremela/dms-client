@@ -16,13 +16,17 @@ import { Iconify } from 'src/components/iconify';
 // ----------------------------------------------------------------------
 
 export type UserProps = {
+  dealer_id: string;
   id: string;
   name: string;
-  role: string;
-  status: string;
-  company: string;
-  avatarUrl: string;
-  isVerified: boolean;
+  location: string;
+  email: string;
+  phone_number: string;
+  aadhar_card: string;
+  pan: string;
+  gst: string;
+  createdAt: string;
+  updatedAt: string;
 };
 
 type UserTableRowProps = {
@@ -49,27 +53,42 @@ export function UserTableRow({ row, selected, onSelectRow }: UserTableRowProps) 
           <Checkbox disableRipple checked={selected} onChange={onSelectRow} />
         </TableCell>
 
-        <TableCell component="th" scope="row">
-          <Box gap={2} display="flex" alignItems="center">
-            <Avatar alt={row.name} src={row.avatarUrl} />
-            {row.name}
-          </Box>
+        <TableCell>{row.dealer_id}</TableCell>
+
+        <TableCell>{row.name}</TableCell>
+
+        <TableCell>{row.location}</TableCell>
+
+        <TableCell>{row.email}</TableCell>
+
+        <TableCell>{row.phone_number}</TableCell>
+
+        <TableCell>{row.aadhar_card}</TableCell>
+
+        <TableCell>{row.pan}</TableCell>
+
+        <TableCell>{row.gst}</TableCell>
+
+        <TableCell
+          style={{
+            whiteSpace: 'nowrap',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            maxWidth: '100px',
+          }}
+        >
+          {row.createdAt}
         </TableCell>
 
-        <TableCell>{row.company}</TableCell>
-
-        <TableCell>{row.role}</TableCell>
-
-        <TableCell align="center">
-          {row.isVerified ? (
-            <Iconify width={22} icon="solar:check-circle-bold" sx={{ color: 'success.main' }} />
-          ) : (
-            '-'
-          )}
-        </TableCell>
-
-        <TableCell>
-          <Label color={(row.status === 'banned' && 'error') || 'success'}>{row.status}</Label>
+        <TableCell
+          style={{
+            whiteSpace: 'nowrap',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            maxWidth: '100px',
+          }}
+        >
+          {row.updatedAt}
         </TableCell>
 
         <TableCell align="right">
